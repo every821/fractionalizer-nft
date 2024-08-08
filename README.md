@@ -1,7 +1,4 @@
-# 2021 ConsenSys Blockchain Developer Bootcamp Final Project: An NFT Fractionalizer
-
-[![Build](https://github.com/web3wannabe/blockchain-developer-bootcamp-final-project/actions/workflows/main.yaml/badge.svg)](https://github.com/web3wannabe/blockchain-developer-bootcamp-final-project/actions/workflows/main.yaml)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/37e1b656-a558-49cf-8b9b-ffbe35d4a80b/deploy-status)](https://app.netlify.com/sites/frac/deploys)
+# NFT Fractionalizer
 
 ## Motivation and Aim
 
@@ -12,8 +9,7 @@ in a contract in return for a specified quantity of tokens that each represent p
 NFT. These tokens may then be distributed to multiple accounts. This process is known as "fractionalization" of an
 NFT. The aim of this project is to implement a simple EVM-based dapp (decentralized application) that allows a user to
 fractionalize their [ERC721](https://ethereum.org/en/developers/docs/standards/tokens/erc-721) NFTs into
-[ERC20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) tokens. The most popular example of a dapp
-that implements this functionality is [fractional.art](https://fractional.art/).
+[ERC20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) tokens.
 
 ## Workflow: Contract Actions and Participants
 
@@ -32,14 +28,6 @@ Actions:
   fractionalize the NFT.
 
 As a side effect, the above functionality also allows the dapp to act as a simple marketplace (or escrow) for accounts to sell NFTs in exchange for ether.
-
-## Bootcamp Requirements
-
-### Link to Public Interface: [frac.netlify.app](https://frac.netlify.app/Market)
-
-### Screencast on [YouTube](https://youtu.be/clPS-XMnfc4)
-[![Screencast on YouTube](https://img.youtube.com/vi/clPS-XMnfc4/maxresdefault.jpg)](https://youtu.be/clPS-XMnfc4) 
-(also checked in at [./FractionalizeNFTScreencast.mp4](FractionalizeNFTScreencast.mp4).
 
 ### [Design Patterns Decisions](design_pattern_decisions.md)
 
@@ -75,8 +63,7 @@ pip install -r requirements.txt
 
 #### Compile, Deploy and Unit Test
 
-The contracts are compiled and tested upon push in Github CI, the
-results can be seen under [Github Actions](https://github.com/web3wannabe/blockchain-developer-bootcamp-final-project/actions/workflows/main.yaml).
+The contracts are compiled and tested upon push in Github CI.
 
 To run the tests locally run `brownie test` (this will start ganache-cli for you):
 ```
