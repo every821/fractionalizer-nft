@@ -14,20 +14,22 @@ fractionalize their [ERC721](https://ethereum.org/en/developers/docs/standards/t
 ## Workflow: Contract Actions and Participants
 
 Actions:
-1. __Fractionalize__: An **NFT owner** can __fractionalize__ their NFT by transferring the NFT to the contract. In
+1. Fractionalize: An **NFT owner** can __fractionalize__ their NFT by transferring the NFT to the contract. In
   return the NFT owner receives the entire supply of a newly created ERC20 token that they specified at
   fractionalization. The **NFT Owner** also sets an initial buyout price for the NFT at fractionalization.
-2. __Buyout__: A **buyer** can __buyout__ (__purchase__) the locked NFT by transferring (at least) the specified amount
+2. Buyout: A **buyer** can __buyout__ (__purchase__) the locked NFT by transferring (at least) the specified amount
    of ETH to the contract. The NFT gets transferred to the **buyer's** account.
-3. __Claim__: Following a buyout, an **ERC20 token holder** of a fractionalized NFT can __claim__ their share of the **buyout** price received
+3. Claim: Following a buyout, an **ERC20 token holder** of a fractionalized NFT can __claim__ their share of the **buyout** price received
    from the **buyer** as determined by the proportion of the ERC20 token supply that they hold. This is also referred to
    as a **payout** in the frontend.
-4. __Redeem__ The **holder of all ERC20 tokens** can __redeem__ the NFT by sending all of the the ERC20 tokens to the
+4. Redeem: The **holder of all ERC20 tokens** can __redeem__ the NFT by sending all of the the ERC20 tokens to the
   contract; the NFT is transferred to the redeeming account. Redemption allows the holder of all the tokens to
   "unfractionalize" the NFT. The most practical use case is that the original owner decided they no longer wanted to
   fractionalize the NFT.
 
 As a side effect, the above functionality also allows the dapp to act as a simple marketplace (or escrow) for accounts to sell NFTs in exchange for ether.
+
+## Bootcamp Requirements
 
 ### [Design Patterns Decisions](design_pattern_decisions.md)
 
